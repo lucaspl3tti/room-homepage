@@ -18,25 +18,171 @@
         <script type="module" src="./js/main.bundle.js" defer></script>
     </head>
     <body>
-        Home Shop About Contact Discover innovative ways to decorate We provide
-        unmatched quality, comfort, and style for property owners across the
-        country. Our experts combine form and function in bringing your vision to
-        life. Create a room in your own style with our collection and make your
-        property a reflection of you and what you love. Shop now We are available
-        all across the globe With stores all over the world, it's easy for you to
-        find furniture for your home or place of business. Locally, we’re in most
-        major cities throughout the country. Find the branch nearest you using our
-        store locator. Any questions? Don't hesitate to contact us today. Shop now
-        Manufactured with the best materials Our modern furniture store provide a
-        high level of quality. Our company has invested in advanced technology to
-        ensure that every product is made as perfect and as consistent as possible.
-        With three decades of experience in this industry, we understand what
-        customers want for their home and office. Shop now About our furniture Our
-        multifunctional collection blends design and function to suit your
-        individual taste. Make each room unique, or pick a cohesive theme that best
-        express your interests and what inspires you. Find the furniture pieces you
-        need, from traditional to contemporary styles or anything in between.
-        Product specialists are available to help you create your dream space.
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom" id="navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="javascript:void(0)">room</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="navbar-collapse__close d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                            <span class="icon icon-close">
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.364.222l1.414 1.414L9.414 8l6.364 6.364-1.414 1.414L8 9.414l-6.364 6.364-1.414-1.414L6.586 8 .222 1.636 1.636.222 8 6.586 14.364.222z" fill="#000" fill-rule="evenodd" opacity=".201"/></svg>
+                            </span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">
+                                <span class="hover-underline">home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">
+                                <span class="hover-underline">shop</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">
+                                <span class="hover-underline">about</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">
+                                <span class="hover-underline">contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <header class="slider slider--header" data-slider-header>
+                <div class="image-wrapper">
+                    <div class="slider__image slider__image--slider1 slider__image--current" data-slider-image="1">
+                        <picture>
+                            <source media="(max-width: 992px)" srcset="./assets/mobile-image-hero-1.jpg">
+                            <source media="(min-width: 993px)" srcset="./assets/desktop-image-hero-1.jpg">
+                            <img src="./assets/desktop-image-hero-1.jpg" alt="Slider Hero Image 1">
+                        </picture>
+                    </div>
+
+                    <div class="slider__image slider__image--slider2 slider--hidden" data-slider-image="2">
+                        <picture>
+                            <source media="(max-width: 992px)" srcset="./assets/mobile-image-hero-2.jpg">
+                            <source media="(min-width: 993px)" srcset="./assets/desktop-image-hero-2.jpg">
+                            <img src="./assets/desktop-image-hero-2.jpg" alt="Slider Hero Image 2">
+                        </picture>
+                    </div>
+
+                    <div class="slider__image slider__image--slider3 slider--hidden" data-slider-image="3">
+                        <picture>
+                            <source media="(max-width: 992px)" srcset="./assets/mobile-image-hero-3.jpg">
+                            <source media="(min-width: 993px)" srcset="./assets/desktop-image-hero-3.jpg">
+                            <img src="./assets/desktop-image-hero-3.jpg" alt="Slider Hero Image 3">
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="container text-wrapper text-wrapper--slider1 slider__text--current" data-slider-text="1">
+                    <div class="slider__text heading slider__text--heading">
+                        <h1>
+                            Discover innovative ways to decorate
+                        </h1>
+                    </div>
+                    <div class="slider__text">
+                        <p>
+                            We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.
+                        </p>
+                    </div>
+                    <div class="slider__link">
+                        <a href="javascript:void(0)">
+                            <span class="link__text">Shop now</span>
+                            <span class="icon icon-arrow-right">
+                                <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="inherit" fill-rule="nonzero"/></svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container text-wrapper text-wrapper--slider2 slider--hidden" data-slider-text="2">
+                    <div class="slider__text heading slider__text--heading">
+                        <h1>
+                            We are available all across the globe
+                        </h1>
+                    </div>
+                    <div class="slider__text">
+                        <p>
+                            We are available all across the globe With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today.
+                        </p>
+                    </div>
+                    <div class="slider__link">
+                        <a href="javascript:void(0)">
+                            <span class="link__text">Shop now</span>
+                            <span class="icon icon-arrow-right">
+                                <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="inherit" fill-rule="nonzero"/></svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container text-wrapper text-wrapper--slider3 slider--hidden" data-slider-text="3">
+                    <div class="slider__text heading slider__text--heading">
+                        <h1>
+                            Manufactured with the best materials
+                        </h1>
+                    </div>
+                    <div class="slider__text">
+                        <p>
+                            Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.
+                        </p>
+                    </div>
+                    <div class="slider__link">
+                        <a href="javascript:void(0)">
+                            <span class="link__text">Shop now</span>
+                            <span class="icon icon-arrow-right">
+                                <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="inherit" fill-rule="nonzero"/></svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slider__controls">
+                    <a href="javascript:void(0)" class="slider__control slider__control--previous" data-slider-controls="previous">
+                        <span class="icon icon-angle-left">
+                            <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M13 0L1 12l12 12" stroke="#fff" fill="none" fill-rule="evenodd"/></svg>
+                        </span>
+                    </a>
+                    <a href="javascript:void(0)" class="slider__control slider__control--next" data-slider-controls="next">
+                        <span class="icon icon-angle-right">
+                            <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M1 0l12 12L1 24" stroke="#fff" fill="none" fill-rule="evenodd"/></svg>
+                        </span>
+                    </a>
+                </div>
+            </header>
+
+            <section title="about" class="about">
+                <div class="image-wrapper about__image about__image--dark">
+                    <img src="./assets/image-about-dark.jpg" alt="About Image Dark">
+                </div>
+
+                <div class="container text-wrapper about__texts">
+                    <div class="about__text heading about__text--heading">
+                        <h2>
+                            About our furniture
+                        </h2>
+                    </div>
+
+                    <div class="about__text">
+                        <p>Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+                    </div>
+                </div>
+
+                <div class="image-wrapper about__image about__image--light">
+                    <img src="./assets/image-about-light.jpg" alt="About Image Light">
+                </div>
+            </section>
+        </main>
 
         <div class="attribution">
             Challenge by
