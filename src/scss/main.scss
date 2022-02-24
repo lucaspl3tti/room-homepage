@@ -1,0 +1,14 @@
+// Import css styles from vendor files
+@import 'vendor/bootstrap/functions';
+@import 'vendor/bootstrap/variables';
+@import 'vendor/bootstrap/mixins';
+
+// Import scss variables
+@import 'abstracts/variables/colors';
+@import 'abstracts/variables/typography';
+@import 'abstracts/variables/general';
+
+// Import base styling
+@import 'base/reset';
+@import 'base/print';
+@import 'base/general';
