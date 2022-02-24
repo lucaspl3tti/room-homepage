@@ -1,7 +1,15 @@
+// black and white color
+$color-black: #000;
+$color-white: #fff;
+
 // body colors
-$color-body: #fff;
-$color-body-dark: #000;
+$color-body: $color-white;
+$color-body-dark: $color-black;
 
 // text colors
-$color-text: $color-body-dark;
-$color-text-light: $color-body;
+$color-text: $color-black;
+$color-text-light: $color-white;
+
+// primary colors
+$color-dark-gray: hsl(0, 0%, 63%);
+$color-very-dark-gray: hsl(0, 0%, 27%);

@@ -1,0 +1,18 @@
+.about__texts {
+    padding: 60px 40px;
+}
+
+@include media-breakpoint-up(lg) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 270px;
+
+        .image-wrapper {
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,10 +1,10 @@
 /** general styling */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;700&display=swap');
 
 body {
     margin: 0;
     font-family: $font-body;
-    font-size: $font-size-normal-mobile;
+    font-size: $font-size-normal;
     background-color: $color-body;
     color: $color-text;
 }
@@ -19,23 +19,23 @@ h5 {
 }
 
 h1 {
-    font-size: $font-size-h1-mobile;
+    font-size: $font-size-h1;
 }
 
 h2 {
-    font-size: $font-size-h2-mobile;
+    font-size: $font-size-h2;
 }
 
 h3 {
-    font-size: $font-size-h3-mobile;
+    font-size: $font-size-h3;
 }
 
 h4 {
-    font-size: $font-size-h4-mobile;
+    font-size: $font-size-h4;
 }
 
 h5 {
-    font-size: $font-size-h1-mobile;
+    font-size: $font-size-h1;
 }
 
 ul {
@@ -57,11 +57,21 @@ img {
     height: auto;
 }
 
+.text-wrapper {
+    padding: 80px 40px;
+    color: $color-dark-gray;
+}
+
 .attribution {
+    display: none;
     font-size: 11px;
     text-align: center;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@include media-breakpoint-up(lg) {
+
 }

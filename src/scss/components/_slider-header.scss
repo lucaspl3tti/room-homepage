@@ -1,0 +1,137 @@
+.slider {
+    &__image {
+        height: 390px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__controls {
+        position: absolute;
+        top: 308px;
+        right: 0;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &__control {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-black;
+        height: 65px;
+        width: 65px;
+        transition: background-color $animation-speed;
+    }
+
+    &__text {
+        margin-bottom: 50px;
+
+        &--heading {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__link {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+
+        a {
+            color: $color-black;
+            transition: color $animation-speed;
+        }
+
+        .link__text {
+            margin-right: 20px;
+        }
+    }
+
+    &--hidden {
+        display: none;
+        opacity: 0;
+        height: 0;
+        width: 0;
+
+        &.text-wrapper {
+            padding: 0;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .slider {
+        display: flex;
+        flex-flow: row nowrap;
+
+        .image-wrapper {
+            flex: 0 0 59%;
+        }
+
+        .text-wrapper {
+            flex: 0 0 41%;
+        }
+
+        &__image {
+            height: auto;
+
+            img {
+                width: auto;
+            }
+        }
+
+        &__controls {
+            top: 469px;
+            right: auto;
+            left: 840px;
+        }
+
+        &__control {
+            &:hover {
+                background-color: $color-dark-gray;
+            }
+        }
+
+        &__link {
+            letter-spacing: 10px;
+
+            .link__text {
+                margin-right: 30px;
+            }
+
+            a {
+                .icon-arrow-right {
+                    transform: translateX(0);
+                    transition: transform $animation-speed;
+                }
+
+                &:hover {
+                    color: $color-dark-gray;
+
+                    .icon-arrow-right {
+                        transform: translateX(15px);
+                    }
+                }
+            }
+        }
+
+        &--hidden {
+            display: none;
+            height: 0;
+            width: 0;
+
+            &.image-wrapper {
+                flex: 0 0 0%;
+            }
+
+            &.text-wrapper {
+                padding: 0;
+                flex: 0 0 0%;
+            }
+        }
+    }
+}
+
+
+
+
