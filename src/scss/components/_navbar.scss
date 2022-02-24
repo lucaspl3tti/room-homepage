@@ -1,6 +1,16 @@
 .navbar {
     width: 100vw;
     background-color: transparent;
+    transition: background-color $animation-speed;
+
+    &--scrolled {
+        background-color: $color-white;
+        box-shadow: 0 0 6px 4px rgba(0, 0, 0, .2);
+
+        &-custom {
+            color: $color-black;
+        }
+    }
 
     .justify-start {
         position: absolute;
@@ -68,10 +78,6 @@
 
                     &.active {
                         color: $color-white;
-                    }
-
-                    &:hover {
-                        text-decoration: underline;
                     }
                 }
             }

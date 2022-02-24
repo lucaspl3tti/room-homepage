@@ -57,6 +57,30 @@ img {
     height: auto;
 }
 
+.hover-underline {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $color-white;
+        transform-origin: bottom right;
+        transition: transform .25s ease-out;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+
 .text-wrapper {
     padding: 80px 40px;
     color: $color-dark-gray;

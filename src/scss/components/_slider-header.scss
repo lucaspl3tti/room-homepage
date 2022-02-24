@@ -9,7 +9,7 @@
 
     &__controls {
         position: absolute;
-        top: 308px;
+        top: 309.5px;
         right: 0;
         display: flex;
         flex-flow: row nowrap;
@@ -23,6 +23,7 @@
         height: 65px;
         width: 65px;
         transition: background-color $animation-speed;
+        cursor: pointer;
     }
 
     &__text {
@@ -55,6 +56,18 @@
 
         &.text-wrapper {
             padding: 0;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .slider {
+        &__image {
+            height: fit-content;
+        }
+
+        &__controls {
+            top: 722px;
         }
     }
 }
@@ -95,22 +108,29 @@
         &__link {
             letter-spacing: 10px;
 
+            a {
+                color: $color-black;
+            }
+
             .link__text {
                 margin-right: 30px;
             }
 
-            a {
-                .icon-arrow-right {
-                    transform: translateX(0);
-                    transition: transform $animation-speed;
+            .icon-arrow-right > svg {
+                fill: $color-black;
+                transform: translateX(0);
+                transition: transform $animation-speed,
+                    fill $animation-speed;
+            }
+
+            &:hover {
+                a {
+                    color: $color-dark-gray;
                 }
 
-                &:hover {
-                    color: $color-dark-gray;
-
-                    .icon-arrow-right {
-                        transform: translateX(15px);
-                    }
+                .icon-arrow-right > svg {
+                    fill: $color-dark-gray;
+                    transform: translateX(15px);
                 }
             }
         }

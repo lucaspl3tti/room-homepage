@@ -1,6 +1,5 @@
-function hello() {
-    const text = 'hello';
-    console.log(text);
-}
+import NavbarPlugin from './plugin/navbar';
+import SliderHeaderPlugin from './plugin/slider-header';
 
-hello();
+const navbar = new NavbarPlugin('#navbar');
+const sliderHeader = new SliderHeaderPlugin('[data-slider-header]');
