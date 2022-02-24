@@ -83,8 +83,8 @@ const html = () => {
             removeComments: true,
             html5: true,
             removeEmptyAttributes: true,
-            sortAttributes: true,
-            sortClassName: true
+            sortAttributes: false,
+            sortClassName: false
         }))
         // Write everything to destination folder
         .pipe(gulp.dest(`${dest}`));
