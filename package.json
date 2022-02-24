@@ -1,7 +1,7 @@
 {
-  "name": "basic-frontend-ide",
+  "name": "@lucaspl3tti/room-homepage",
   "version": "1.0.0",
-  "description": "A basic test and development environment for my frontend projects",
+  "description": "A frontend-mentor challenge, to create a e-commerce Homepage",
   "main": "index.js",
   "scripts": {
     "dev": "gulp dev",
@@ -12,19 +12,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucaspl3tti/basic-frontend-ide.git"
+    "url": "git@github.com:lucaspl3tti/room-homepage.git"
   },
   "keywords": [
     "javascript",
     "sass",
-    "html"
+    "html",
+    "frontend",
+    "challenge"
   ],
   "author": "Jan-Luca Splettstößer",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lucaspl3tti/basic-frontend-ide/issues"
+    "url": "https://github.com/lucaspl3tti/room-homepage/issues"
   },
-  "homepage": "https://github.com/lucaspl3tti/basic-frontend-ide#readme",
+  "homepage": "https://github.com/lucaspl3tti/room-homepage#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.2",
     "babel-runtime": "^6.26.0",
