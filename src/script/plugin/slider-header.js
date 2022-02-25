@@ -11,17 +11,6 @@ export default class SliderHeaderPlugin {
         // define slider targets and numbers
         this.sliderImageTarget = 'data-slider-image';
         this.sliderTextTarget = 'data-slider-text';
-        this.slider1 = '"1"';
-        this.slider2 = '"2"';
-        this.slider3 = '"3"';
-
-        // select the different slider images and texts
-        this.sliderImage1 = this.el.querySelector('[' + this.sliderImageTarget + '=' + this.slider1 + ']');
-        this.sliderText1 = this.el.querySelector('[' + this.sliderTextTarget + '=' + this.slider1 + ']');
-        this.sliderImage2 = this.el.querySelector('[' + this.sliderImageTarget + '=' + this.slider2 + ']');
-        this.sliderText2 = this.el.querySelector('[' + this.sliderTextTarget + '=' + this.slider2 + ']');
-        this.sliderImage3 = this.el.querySelector('[' + this.sliderImageTarget + '=' + this.slider3 + ']');
-        this.sliderText3 = this.el.querySelector('[' + this.sliderTextTarget + '=' + this.slider3 + ']');
 
         this.registerEvents();
     }
