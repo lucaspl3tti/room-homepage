@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/lucaspl3tti/room-homepage)
-- Live Site URL: [Live Page](https://your-live-site-url.com)
+- Live Site URL: [Live Page](https://room-homepage-challenge-jls.netlify.app/)
 
 ## My process
 
