@@ -4,7 +4,7 @@
 body {
     margin: 0;
     font-family: $font-body;
-    font-size: $font-size-normal;
+    font-size: $font-size-small;
     background-color: $color-body;
     color: $color-text;
 }
@@ -81,11 +81,6 @@ img {
     }
 }
 
-.text-wrapper {
-    padding: 80px 40px;
-    color: $color-dark-gray;
-}
-
 .attribution {
     display: none;
     font-size: 11px;
@@ -97,5 +92,7 @@ img {
 }
 
 @include media-breakpoint-up(lg) {
-
+    body {
+        font-size: $font-size-normal;
+    }
 }

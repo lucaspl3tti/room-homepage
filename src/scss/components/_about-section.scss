@@ -2,6 +2,15 @@
     padding: 60px 40px;
 }
 
+.about__text--heading {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+    h2 {
+        font-size: $font-size-normal;
+    }
+}
+
 @include media-breakpoint-up(md) {
     .about {
         .image-wrapper {

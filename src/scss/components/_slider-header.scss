@@ -48,6 +48,11 @@
         }
     }
 
+    .text-wrapper {
+        padding: 80px 40px;
+        color: $color-dark-gray;
+    }
+
     &--hidden {
         display: none;
         opacity: 0;
@@ -74,8 +79,8 @@
 
 @include media-breakpoint-up(lg) {
     .slider {
-        display: flex;
-        flex-flow: row nowrap;
+        display: grid;
+        grid-template-columns: 840px auto;
 
         .image-wrapper {
             flex: 0 0 59%;
@@ -133,6 +138,11 @@
                     transform: translateX(15px);
                 }
             }
+        }
+
+        .text-wrapper {
+            padding: 80px;
+            color: $color-dark-gray;
         }
 
         &--hidden {
