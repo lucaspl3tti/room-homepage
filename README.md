@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Githun Repo](https://github.com/lucaspl3tti/room-homepage)
+- Solution URL: [Github Repo](https://github.com/lucaspl3tti/room-homepage)
 - Live Site URL: [Live Page](https://your-live-site-url.com)
 
 ## My process
