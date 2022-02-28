@@ -61,8 +61,8 @@ To layout a grid is still a bit complicated for me, so in the future I wanna try
 - Frontend Mentor - [@lucaspl3tti](https://www.frontendmentor.io/profile/lucaspl3tti)
 
 ## Local Installation
-1. Clone the repo with `git clone https://github.com/lucaspl3tti/<Repo Path>.git` to your desktop
-   * use `git clone git@github.com:lucaspl3tti/<Repo Path>.git` if you are using git with ssh
+1. Clone the repo with `git clone https://github.com/lucaspl3tti/room-homepage.git` to your desktop
+   * use `git clone git@github.com:lucaspl3tti/room-homepage.git` if you are using git with ssh
 2. Run an installation of the package dependencies using `npm i`
 
 ### Commands
