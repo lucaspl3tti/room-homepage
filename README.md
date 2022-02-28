@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/lucaspl3tti/room-homepage)
+- Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-ecommerce-homepage-using-bootstrap-scss-and-js-rPXUPXfrt)
 - Live Site URL: [Live Page](https://room-homepage-challenge-jls.netlify.app/)
 
 ## My process
