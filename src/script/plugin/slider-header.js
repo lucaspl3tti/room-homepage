@@ -16,50 +16,53 @@ export default class SliderHeaderPlugin {
     }
 
     registerEvents() {
-        this.sliderNavPrevios.addEventListener('click', () => {
-            const sliderNavPrevious = 'previous';
-            this.onClickSliderNav(sliderNavPrevious);
-        });
+        this.sliderNavPrevios.addEventListener('click', () => this.onClickSliderNav('previous'));
 
-        this.sliderNavNext.addEventListener('click', () => {
-            const sliderNavNext = 'next';
-            this.onClickSliderNav(sliderNavNext);
-        });
+        this.sliderNavNext.addEventListener('click', () => this.onClickSliderNav('next'));
     }
 
     onClickSliderNav(sliderNavEl) {
-        const currentSlider = this.getCurrentSliderAttribute();
-        const currentSliderAttr = Number(currentSlider);
-        let newSliderAttr = 0;
+        const currentSliderAttr = this.getCurrentSliderAttribute();
 
-        if (sliderNavEl === 'previous') {
-            // select previous slider element
-            if (currentSliderAttr > 1) {
-                newSliderAttr = currentSliderAttr - 1;
-            } else {
-                newSliderAttr = this.sliderCount;
-            }
-        } else if (sliderNavEl === 'next') {
-            // select next slider element
-            if (currentSliderAttr < this.sliderCount) {
-                newSliderAttr = currentSliderAttr + 1;
-            } else {
-                newSliderAttr = 1;
-            }
-        }
+        // per default select first slider element
+        let newSliderAttr = 1;
 
-        const currentSliderImage = this.el.querySelector('[' + this.sliderImageTarget + '="' + currentSliderAttr + '"]');
-        const currentSliderText = this.el.querySelector('[' + this.sliderTextTarget + '="' + currentSliderAttr + '"]');
-        const nextSliderImage = this.el.querySelector('[' + this.sliderImageTarget + '="' + newSliderAttr + '"]');
-        const nextSliderText = this.el.querySelector('[' + this.sliderTextTarget + '="' + newSliderAttr + '"]');
+        // get attribute for new slider element
+        newSliderAttr = this.getNewSliderAttr(sliderNavEl, currentSliderAttr);
 
+        // select current slider image and text, as well as the next slider image and text
+        const currentSliderImage = this.getSliderEl(this.sliderImageTarget, currentSliderAttr);
+        const currentSliderText = this.getSliderEl(this.sliderTextTarget, currentSliderAttr);
+        const nextSliderImage = this.getSliderEl(this.sliderImageTarget, newSliderAttr);
+        const nextSliderText = this.getSliderEl(this.sliderTextTarget, newSliderAttr);
+
+        // hide current slider and show the next one
         this.hideSlider(currentSliderImage, currentSliderText);
         this.showSlider(nextSliderImage, nextSliderText);
     }
 
     getCurrentSliderAttribute() {
-        const currentSliderAttr = this.el.querySelector('.slider__image--current').getAttribute('data-slider-image');
-        return currentSliderAttr;
+        return Number(this.el.querySelector('.slider__image--current').getAttribute('data-slider-image'));
+    }
+
+    getNewSliderAttr(sliderNavEl, currentSliderAttr) {
+        if (sliderNavEl === 'previous') {
+
+            // select previous slider element
+            if (currentSliderAttr > 1) return currentSliderAttr - 1;
+            return this.sliderCount;
+
+        } else if (sliderNavEl === 'next') {
+
+            // select next slider element
+            if (currentSliderAttr < this.sliderCount) return currentSliderAttr + 1;
+            return 1;
+
+        }
+    }
+
+    getSliderEl(targetEl, sliderAttr) {
+        return this.el.querySelector('[' + targetEl + '="' + sliderAttr + '"]');
     }
 
     hideSlider(sliderImageEl, sliderTextEl) {
