@@ -15,11 +15,12 @@ export default class NavbarPlugin {
                 this.el.classList.add('navbar--scrolled');
                 this.el.classList.add('navbar-light');
                 this.el.classList.remove('navbar-dark');
-            } else {
-                this.el.classList.remove('navbar--scrolled');
-                this.el.classList.remove('navbar-light');
-                this.el.classList.add('navbar-dark');
+                return
             }
+
+            this.el.classList.remove('navbar--scrolled');
+            this.el.classList.remove('navbar-light');
+            this.el.classList.add('navbar-dark');
         };
     }
 }
